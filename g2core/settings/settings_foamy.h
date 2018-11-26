@@ -66,10 +66,10 @@
 #define X_AXIS_MODE                 AXIS_DISABLED           // {xam:  see canonical_machine.h cmAxisMode for valid values
 #endif
 #ifndef X_VELOCITY_MAX
-#define X_VELOCITY_MAX              500.0                  // {xvm:  G0 max velocity in mm/min
+#define X_VELOCITY_MAX              1000.0                  // {xvm:  G0 max velocity in mm/min
 #endif
 #ifndef X_FEEDRATE_MAX
-#define X_FEEDRATE_MAX              500.0                  // {xfr:  G1 max feed rate in mm/min
+#define X_FEEDRATE_MAX              1000.0                  // {xfr:  G1 max feed rate in mm/min
 #endif
 #ifndef X_TRAVEL_MAX
 #define X_TRAVEL_MAX                470.0                     // {xtm:  travel between switches or crashes
@@ -98,10 +98,10 @@
 #define Y_AXIS_MODE                 AXIS_DISABLED
 #endif
 #ifndef Y_VELOCITY_MAX
-#define Y_VELOCITY_MAX              500.0
+#define Y_VELOCITY_MAX              1000.0
 #endif
 #ifndef Y_FEEDRATE_MAX
-#define Y_FEEDRATE_MAX              500.0
+#define Y_FEEDRATE_MAX              1000.0
 #endif
 #ifndef Y_TRAVEL_MAX
 #define Y_TRAVEL_MAX                270.0
@@ -130,10 +130,10 @@
 #define U_AXIS_MODE                 AXIS_DISABLED           // {xam:  see canonical_machine.h cmAxisMode for valid values
 #endif
 #ifndef U_VELOCITY_MAX
-#define U_VELOCITY_MAX              500.0                  // {xvm:  G0 max velocity in mm/min
+#define U_VELOCITY_MAX              1000.0                  // {xvm:  G0 max velocity in mm/min
 #endif
 #ifndef U_FEEDRATE_MAX
-#define U_FEEDRATE_MAX              500.0                  // {xfr:  G1 max feed rate in mm/min
+#define U_FEEDRATE_MAX              1000.0                  // {xfr:  G1 max feed rate in mm/min
 #endif
 #ifndef U_TRAVEL_MAX
 #define U_TRAVEL_MAX                470.0                     // {xtm:  travel between switches or crashes
@@ -162,10 +162,10 @@
 #define V_AXIS_MODE                 AXIS_DISABLED
 #endif
 #ifndef V_VELOCITY_MAX
-#define V_VELOCITY_MAX              500.0
+#define V_VELOCITY_MAX              1000.0
 #endif
 #ifndef V_FEEDRATE_MAX
-#define V_FEEDRATE_MAX              500.0
+#define V_FEEDRATE_MAX              1000.0
 #endif
 #ifndef V_TRAVEL_MAX
 #define V_TRAVEL_MAX                270.0

@@ -11,6 +11,28 @@
 //**** GLOBAL / GENERAL SETTINGS **********************************************
 //*****************************************************************************
 
+// MOTOR 1
+#ifndef M1_STEP_ANGLE
+#define M1_STEP_ANGLE               1.8                     // {1sa: degrees per step
+#endif
+#ifndef M1_TRAVEL_PER_REV
+#define M1_TRAVEL_PER_REV           (1.0/12.0*25.4)                    // 2.1166666666 Acme 3/8 1/12"/rev.
+#endif
+#ifndef M1_MICROSTEPS
+#define M1_MICROSTEPS               10                       // {1mi:  1,2,4,8,    16,32 (G2 ONLY)
+#endif
+
+// MOTOR 2
+#ifndef M2_STEP_ANGLE
+#define M2_STEP_ANGLE               1.8                     // {1sa: degrees per step
+#endif
+#ifndef M2_TRAVEL_PER_REV
+#define M2_TRAVEL_PER_REV           (1.0/12.0*25.4)                    // 2.1166666666 Acme 3/8 1/12"/rev.
+#endif
+#ifndef M2_MICROSTEPS
+#define M2_MICROSTEPS               10                       // {1mi:  1,2,4,8,    16,32 (G2 ONLY)
+#endif
+
 // MOTOR 3
 #ifndef M3_MOTOR_MAP
 #define M3_MOTOR_MAP                AXIS_U_EXTERNAL
@@ -19,28 +41,10 @@
 #define M3_STEP_ANGLE               1.8
 #endif
 #ifndef M3_TRAVEL_PER_REV
-#define M3_TRAVEL_PER_REV           1.25                    // 1.25 is a typical value for a screw axis
+#define M3_TRAVEL_PER_REV           (1.0/12.0*25.4)                    // 2.1166666666 Acme 3/8 1/12"/rev.
 #endif
 #ifndef M3_MICROSTEPS
-#define M3_MICROSTEPS               8
-#endif
-#ifndef M3_STEPS_PER_UNIT
-#define M3_STEPS_PER_UNIT           0
-#endif
-#ifndef M3_POLARITY
-#define M3_POLARITY                 0
-#endif
-#ifndef M3_ENABLE_POLARITY
-#define M3_ENABLE_POLARITY          IO_ACTIVE_LOW
-#endif
-#ifndef M3_STEP_POLARITY
-#define M3_STEP_POLARITY            IO_ACTIVE_HIGH
-#endif
-#ifndef M3_POWER_MODE
-#define M3_POWER_MODE               MOTOR_DISABLED
-#endif
-#ifndef M3_POWER_LEVEL
-#define M3_POWER_LEVEL              0.0
+#define M3_MICROSTEPS              10 
 #endif
 
 // MOTOR 4
@@ -51,30 +55,11 @@
 #define M4_STEP_ANGLE               1.8
 #endif
 #ifndef M4_TRAVEL_PER_REV
-#define M4_TRAVEL_PER_REV           360.0                   // in degrees if rotary axis (ABC)
+#define M4_TRAVEL_PER_REV           (1.0/12.0*25.4)                    // 2.1166666666 Acme 3/8 1/12"/rev.
 #endif
 #ifndef M4_MICROSTEPS
-#define M4_MICROSTEPS               8
+#define M4_MICROSTEPS               10
 #endif
-#ifndef M4_STEPS_PER_UNIT
-#define M4_STEPS_PER_UNIT           0
-#endif
-#ifndef M4_POLARITY
-#define M4_POLARITY                 0
-#endif
-#ifndef M4_ENABLE_POLARITY
-#define M4_ENABLE_POLARITY          IO_ACTIVE_LOW
-#endif
-#ifndef M4_STEP_POLARITY
-#define M4_STEP_POLARITY            IO_ACTIVE_HIGH
-#endif
-#ifndef M4_POWER_MODE
-#define M4_POWER_MODE               MOTOR_DISABLED
-#endif
-#ifndef M4_POWER_LEVEL
-#define M4_POWER_LEVEL              0.0
-#endif
-
 
 // X AXIS
 #ifndef X_AXIS_MODE
